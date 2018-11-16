@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="P2Score" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#addToSequencePress" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GamePageController">
+   <children>
+      <Rectangle fx:id="counterBox" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="37.0" layoutX="249.0" layoutY="203.0" stroke="#e5e5e5" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="101.0" />
+      <Button fx:id="btnA" layoutX="14.0" layoutY="249.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="42.0" style="-fx-background-color: #e5e5e5;" text="1" textFill="#757575">
+         <padding>
+            <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnS" layoutX="61.0" layoutY="249.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="42.0" style="-fx-background-color: #e5e5e5 #e5e5e5;" text="2" textFill="#757575">
+         <padding>
+            <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnD" layoutX="109.0" layoutY="249.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="42.0" style="-fx-background-color: #e5e5e5 #e5e5e5;" text="3" textFill="#757575">
+         <padding>
+            <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnF" layoutX="156.0" layoutY="249.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="42.0" style="-fx-background-color: #e5e5e5 #e5e5e5;" text="4" textFill="#757575">
+         <padding>
+            <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnJ" layoutX="402.0" layoutY="248.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="42.0" style="-fx-background-color: #e5e5e5 #e5e5e5;" text="7" textFill="#757575">
+         <padding>
+            <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnK" layoutX="448.0" layoutY="248.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="42.0" style="-fx-background-color: #e5e5e5 #e5e5e5;" text="8" textFill="#757575">
+         <padding>
+            <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnL" layoutX="495.0" layoutY="248.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="42.0" style="-fx-background-color: #e5e5e5 #e5e5e5;" text="9" textFill="#757575">
+         <padding>
+            <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn8" layoutX="542.0" layoutY="248.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="42.0" style="-fx-background-color: #e5e5e5 #e5e5e5;" text="0" textFill="#757575">
+         <padding>
+            <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Button>
+      <Text fx:id="p1Name" fill="#505050" layoutX="17.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER 1" wrappingWidth="130.5460205078125">
+         <font>
+            <Font name="Arial Italic" size="23.0" />
+         </font>
+      </Text>
+      <Text fx:id="p1Score" fill="#38b449" layoutX="17.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="66.39999747276306">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="p2Name" fill="#505050" layoutX="451.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER 2" textAlignment="RIGHT" wrappingWidth="130.5460205078125">
+         <font>
+            <Font name="Arial Italic" size="23.0" />
+         </font>
+      </Text>
+      <Text fx:id="p2Score" fill="#38b449" layoutX="516.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT" wrappingWidth="66.39999747276306">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="nameTurn" fill="#7daed4" layoutX="217.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player's Turn" textAlignment="CENTER" wrappingWidth="167.84097290039062">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font></Text>
+      <Button fx:id="sendBtn" layoutX="448.0" layoutY="359.0" mnemonicParsing="false" onMouseClicked="#countDownMessage" prefHeight="27.0" prefWidth="78.0" text="SEND" textFill="#757575" />
+      <Text fx:id="displayMessage" fill="#ff7474" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" textAlignment="CENTER" wrappingWidth="601.9035127162933">
+         <font>
+            <Font name="Arial Bold" size="49.0" />
+         </font>
+      </Text>
+      <Text fx:id="countDownTimer" fill="#1b75bb" layoutX="165.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" textAlignment="CENTER" visible="false" wrappingWidth="270.93670654296875">
+         <font>
+            <Font name="Arial Bold" size="38.0" />
+         </font>
+      </Text>
+      <Text fx:id="yourPattern" fill="#a0a0a0" layoutX="9.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dup this:" textAlignment="CENTER" visible="false" wrappingWidth="81.9537552551659">
+         <font>
+            <Font name="Arial Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="wordCount" fill="#505050" layoutX="255.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" visible="false" wrappingWidth="37.63487243652344">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="slash" fill="#505050" layoutX="292.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/" textAlignment="CENTER" visible="false" wrappingWidth="13.840972900390625">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="wordMax" fill="#505050" layoutX="304.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" visible="false" wrappingWidth="39.542548729696364">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="lastPattern" fill="#505050" layoutX="90.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="this" textAlignment="CENTER" visible="false" wrappingWidth="505.71449279785156">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="messageType" layoutX="152.0" layoutY="359.0" prefHeight="26.0" prefWidth="297.0" promptText="Send a message..." />
+   </children>
+</AnchorPane>
